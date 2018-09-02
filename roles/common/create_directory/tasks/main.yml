@@ -1,0 +1,11 @@
+---
+# tasks file for create_directory
+- name: check vars
+  debug:
+    msg: "/tmp/{{ env }}_{{ inventory_hostname }}"
+
+- name: create directory
+  file:
+    path: "/tmp/{{ env }}_{{ inventory_hostname }}"
+    state: directory
+    mode: 0755

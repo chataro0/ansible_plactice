@@ -1,0 +1,10 @@
+---
+# tasks file for set_ntp
+- name: Install chrony
+  debug:
+    msg: "yum install -y chrony"
+
+- name: set conf
+  template:
+    src: chrony.j2
+    dest: "/tmp/{{ env }}_{{ inventory_hostname }}/chrony.conf"

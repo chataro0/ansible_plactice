@@ -1,0 +1,7 @@
+- hosts: all
+  connection: local
+  gather_facts: false
+  roles:
+    - role: common/create_directory
+    - role: common/set_chrony
+      tags: chrony
