@@ -4,78 +4,54 @@
 
 ```
 .
-├ inventory
-│   ├ production
-│   │   ├ group_vars
-│   │   │   ├ all.yml
-│   │   │   ├ app.yml
-│   │   │   ├ db.yml
-│   │   │   └ web.yml
-│   │   ├ hosts
-│   │   └ host_vars
-│   │       └ webserver.yml
-│   └ staging
-│       ├ group_vars
-│       │   ├ all.yml
-│       │   ├ app.yml
-│       │   ├ db.yml
-│       │   └ web.yml
-│       ├ hosts
-│       └ host_vars
-├ playbook.yml
-├ README.md
-└ roles
-    └ common
-        ├ create_directory
-        │   ├ defaults
-        │   │   └ main.yml
-        │   ├ files
-        │   ├ handlers
-        │   │   └ main.yml
-        │   ├ meta
-        │   │   └ main.yml
-        │   ├ README.md
-        │   ├ tasks
-        │   │   └ main.yml
-        │   ├ templates
-        │   ├ tests
-        │   │   ├ inventory
-        │   │   └ test.yml
-        │   └ vars
-        │       └ main.yml
-        ├ install_packages
-        │   ├ defaults
-        │   │   └ main.yml
-        │   ├ files
-        │   ├ handlers
-        │   │   └ main.yml
-        │   ├ meta
-        │   │   └ main.yml
-        │   ├ README.md
-        │   ├ tasks
-        │   │   └ main.yml
-        │   ├ templates
-        │   ├ tests
-        │   │   ├ inventory
-        │   │   └ test.yml
-        │   └ vars
-        │       └ main.yml
-        └ set_chrony
-            ├ defaults
-            │   └ main.yml
-            ├ files
-            ├ handlers
-            │   └ main.yml
-            ├ meta
-            │   └ main.yml
-            ├ README.md
-            ├ tasks
-            │   └ main.yml
-            ├ templates
-            │   └ chrony.j2
-            ├ tests
-            │   ├ inventory
-            │   └ test.yml
-            └ vars
-                └ main.yml
+├── inventory
+│   ├── production
+│   │   ├── group_vars
+│   │   │   ├── all.yml
+│   │   │   ├── app.yml
+│   │   │   ├── db.yml
+│   │   │   └── web.yml
+│   │   ├── hosts
+│   │   └── host_vars
+│   │       └── webserver.yml
+│   └── staging
+│       ├── group_vars
+│       │   ├── all.yml
+│       │   ├── app.yml
+│       │   ├── db.yml
+│       │   └── web.yml
+│       ├── hosts
+│       └── host_vars
+├── playbook.yml
+├── README.md
+└── roles
+    └── common
+        ├── create_directory
+        │   ├── tasks
+        │   │   └── main.yml
+        │   └── tests
+        │       ├── inventory
+        │       └── test.yml
+        ├── install_packages
+        │   ├── defaults
+        │   │   └── main.yml
+        │   ├── tasks
+        │   │   └── main.yml
+        │   └── tests
+        │       ├── inventory
+        │       └── test.yml
+        └── set_chrony
+            ├── defaults
+            │   └── main.yml
+            ├── handlers
+            │   └── main.yml
+            ├── tasks
+            │   └── main.yml
+            ├── templates
+            │   └── chrony.j2
+            └── tests
+                ├── inventory
+                └── test.yml
+
+22 directories, 26 files
 ```
