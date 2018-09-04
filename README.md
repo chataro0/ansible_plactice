@@ -30,7 +30,7 @@ ansible-playbook -i inventory/production/hosts playbook.yml --limit web
 │   │   │   └── web.yml
 │   │   ├── hosts
 │   │   └── host_vars
-│   │       └── webserver.yml
+│   │       └── webserver2.yml
 │   └── staging
 │       ├── group_vars
 │       │   ├── all.yml
