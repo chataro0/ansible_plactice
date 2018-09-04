@@ -1,5 +1,22 @@
 ### This is my practice of Ansible based on [Official BestPractice](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
 
+# Examples
+
+### All Roles for All hosts
+```bash
+ansible-playbook -i inventory/production/hosts playbook.yml
+```
+
+### selected Roles for All hosts
+```bash
+ansible-playbook -i inventory/production/hosts playbook.yml --tags chrony
+```
+
+### All Roles for selected Groups
+```bash
+ansible-playbook -i inventory/production/hosts playbook.yml --limit web
+```
+
 # Directory
 
 ```
