@@ -1,5 +1,4 @@
 ---
-# tasks file for create_directory
 - name: check vars
   debug:
     msg: "/tmp/{{ env }}_{{ inventory_hostname }}"

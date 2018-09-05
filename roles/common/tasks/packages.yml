@@ -1,5 +1,4 @@
 ---
-# tasks file for install_packages
 - name: Install Packages
   debug:
     msg: "yum install -y {{ item }}"

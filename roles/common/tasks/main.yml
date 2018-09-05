@@ -1,0 +1,10 @@
+---
+- name: ディレクトリを作成する
+  import_tasks: create_directory.yml
+  tags: create_directory
+- name: パッケージをインストールする
+  import_tasks: packages.yml
+  tags: package
+- name: chronyのセットアップを行う
+  import_tasks: chrony.yml
+  tags: chrony
